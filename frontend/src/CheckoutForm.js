@@ -43,7 +43,7 @@ class CheckoutForm extends React.Component {
           let formData = new FormData();
           formData.append("description", "CHALLENGER INTERACTIVE");
           formData.append("currency", "usd");
-          formData.append("amount", 1212);
+          formData.append("amount", 1500);
           formData.append("source", result.token.id);
           return fetch(`http://127.0.0.1:8000/api/create-charge/`, {
             method: "POST",
